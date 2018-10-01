@@ -1,7 +1,7 @@
 import { compose, lifecycle, withState, withHandlers } from 'recompose';
-import Home from '../../Components/Home';
+import Contacts from '../Components/Contacts';
 import kiperContacts from 'react-native-kiper-contacts';
-import checkContactsPermission from '../../Services/requestPermission';
+import checkContactsPermission from '../Services/requestPermission';
 
 const loadMoreContacts = ({
   contacts,
@@ -50,4 +50,4 @@ const enhance = compose(
   })
 );
 
-export default enhance(Home);
+export default enhance(Contacts);

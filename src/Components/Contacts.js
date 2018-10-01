@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
   }
 });
 
-const Home = ({
+const Contacts = ({
   hasContactsPermission,
   contacts,
   loadMoreContacts,
@@ -74,11 +74,11 @@ const Home = ({
   );
 };
 
-Home.propTypes = {
+Contacts.propTypes = {
   hasContactsPermission: propTypes.bool,
   contacts: propTypes.array,
   loadMoreContacts: propTypes.func,
   firstLoading: propTypes.bool
 };
 
-export default Home;
+export default Contacts;
